@@ -1,0 +1,50 @@
+.main{
+    color: rgba(41, 50, 100, 1);
+}
+
+.questions{
+    margin: 0px;
+    padding: 20px;
+}
+
+.answers--div{
+    border: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.answers--div input[type="radio"]{
+    display: none;
+}
+
+.answers--div label {
+    border: 0.79px solid rgba(77, 91, 158, 1);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 150px;
+    min-height: 15px;
+    cursor: pointer;
+}
+
+.answers--div input[type='radio']:checked + label{
+    background-color: rgba(214, 219, 245, 1);
+    border: none;
+}
+
+.answers--div label.correct {
+    background-color: rgba(148, 215, 162, 1) !important;
+    border: none;
+}
+
+.answers--div label.highlight-correct {
+    background-color: rgba(148, 215, 162, 1) !important;
+    border: none;
+}
+
+.answers--div label.incorrect {
+    background-color: rgba(248, 188, 188, 1) !important;
+    border: none;
+}
